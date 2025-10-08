@@ -13,7 +13,7 @@ Use the [Nimble][3] package manager to add `poseidon2` to an existing
 project. Add the following to its .nimble file:
 
 ```nim
-requires "poseidon2 >= 0.1.0 & < 0.2.0"
+requires "poseidon2 >= 0.1.1 & < 0.2.0"
 ```
 
 Usage
