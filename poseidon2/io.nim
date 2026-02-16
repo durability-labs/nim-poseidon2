@@ -26,7 +26,7 @@ func toBytes*(element: F): array[32, byte] =
   ## Converts a field element into its canonical representation in little-endian
   ## byte order. Uses at most 254 bits, the remaining most-significant bits are
   ## set to 0.
-  assert marshal(result, element.toBig(), littleEndian)
+  doAssert marshal(result, element.toBig(), littleEndian)
 
 iterator elements*(bytes: openArray[byte], _: type F): F =
   ## Converts bytes into field elements. The byte array is converted 31 bytes at
